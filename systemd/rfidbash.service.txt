@@ -1,0 +1,14 @@
+[Unit]
+Description=RFID reader
+After=network-online.target
+ 
+[Service]
+ExecStart=/bin/bash /home/pi/Desktop/startup.sh
+WorkingDirectory=/home/pi/Desktop/
+StandardOutput=inherit
+StandardError=inherit
+Restart=on-failure
+RestartSec=60
+ 
+[Install]
+WantedBy=multi-user.target
