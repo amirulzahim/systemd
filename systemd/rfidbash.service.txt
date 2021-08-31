@@ -1,5 +1,5 @@
 [Unit]
-Description=RFID reader
+Description=RFID reader service
 After=network-online.target
  
 [Service]
